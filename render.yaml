@@ -4,6 +4,6 @@ services:
     env: node
     region: oregon
     plan: free
-    buildCommand: cd frontend && npm install && npm run build && cd .. && cd backend && npm ci
-    startCommand: cd backend && node start.js
+    buildCommand: npm install && npm run build
+    startCommand: npm start
     rootDir: .
