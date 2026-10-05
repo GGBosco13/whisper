@@ -1,10 +1,9 @@
 services:
   - type: web
-    name: voice-call-app
-    repo: https://github.com/GGBosco13/voice-call-app
-    plan: free
-    region: oregon
-    buildCommand: cd frontend && npm install && npx vite build && cd ../server && npm install
-    startCommand: cd server && node server.js
+    name: whisperweb
     env: node
+    region: oregon
+    plan: free
+    buildCommand: cd backend && npm ci && npm run build
+    startCommand: cd backend && npm start
     rootDir: .
