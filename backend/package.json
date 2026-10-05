@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"cd ../frontend && npm run dev\" \"nodemon src/index.js\"",
-    "build": "cd ../frontend && npm ci && npm run build",
+    "build": "cd frontend && npm install && npm run build",
     "start": "node start.js"
   },
   "dependencies": {
